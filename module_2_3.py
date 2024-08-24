@@ -6,4 +6,4 @@ while item < len(my_list):
         break
     if my_list[item] > 0:
         print(my_list[item])
-    item += 1
+    item = item + 1
