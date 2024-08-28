@@ -7,12 +7,12 @@ rand_numbers = random.choice(numbers)
 print('Случайное число в левой вставке: ', rand_numbers)
 
 def generate_password(rand_numbers):
-    result = ""
+    res = ''
     for i in range(1, rand_numbers):
         for j in range(i+1, rand_numbers+1):
             if rand_numbers % (i + j) == 0:
-                result += str(i) + str(j)
-    return result
+                res += str(i) + str(j)
+    return res
 
 result = generate_password(rand_numbers)
 print('Пароль:', result)
